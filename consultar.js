@@ -140,14 +140,28 @@ async function buscarProcessos({ data, comarca }, tentativa = 1) {
     query: { bool: { must } },
   };
 
-  const resp = await fetch(ENDPOINT, {
-    method: 'POST',
-    headers: {
-      Authorization: `APIKey ${API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(body),
-  });
+  let resp;
+  try {
+    resp = await fetch(ENDPOINT, {
+      method: 'POST',
+      headers: {
+        Authorization: `APIKey ${API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+  } catch (err) {
+    // Falha de conexão (não chegou a ter resposta HTTP) — mostra o motivo
+    // real em vez de só "fetch failed", e tenta de novo algumas vezes.
+    const motivo = (err.cause && (err.cause.code || err.cause.message)) || err.message;
+    if (tentativa <= 5) {
+      const espera = 3000 * tentativa;
+      console.log(`  Falha de conexão (${motivo}) — tentando de novo em ${espera / 1000}s (tentativa ${tentativa}/5)...`);
+      await aguardar(espera);
+      return buscarProcessos({ data, comarca }, tentativa + 1);
+    }
+    throw new Error(`Falha de conexão com a API DataJud após 5 tentativas: ${motivo}`);
+  }
 
   // A API pública do CNJ tem limite de requisições simultâneas. Em vez de
   // travar tudo, espera um pouco e tenta de novo (até 5 vezes).
