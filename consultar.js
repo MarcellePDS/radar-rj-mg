@@ -110,7 +110,11 @@ function proximoDia(dataStr) {
   return d.toISOString().split('T')[0];
 }
 
-async function buscarProcessos({ data, comarca }) {
+function aguardar(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function buscarProcessos({ data, comarca }, tentativa = 1) {
   const inicioDoDia = data;
   const inicioDoDiaSeguinte = proximoDia(data);
 
@@ -144,6 +148,15 @@ async function buscarProcessos({ data, comarca }) {
     },
     body: JSON.stringify(body),
   });
+
+  // A API pública do CNJ tem limite de requisições simultâneas. Em vez de
+  // travar tudo, espera um pouco e tenta de novo (até 5 vezes).
+  if ((resp.status === 429 || resp.status === 503) && tentativa <= 5) {
+    const espera = 2000 * tentativa; // 2s, 4s, 6s, 8s, 10s
+    console.log(`  API ocupada (HTTP ${resp.status}) — tentando de novo em ${espera / 1000}s (tentativa ${tentativa}/5)...`);
+    await aguardar(espera);
+    return buscarProcessos({ data, comarca }, tentativa + 1);
+  }
 
   if (!resp.ok) {
     const texto = await resp.text();
@@ -217,8 +230,9 @@ async function main() {
   const vistos = carregarHistorico();
 
   let totalGeral = 0;
-  for (const dia of dias) {
-    totalGeral += await consultarUmDia(dia, opts.comarca, vistos);
+  for (let i = 0; i < dias.length; i++) {
+    totalGeral += await consultarUmDia(dias[i], opts.comarca, vistos);
+    if (i < dias.length - 1) await aguardar(700); // respiro entre requisições
   }
 
   if (dias.length > 1) {

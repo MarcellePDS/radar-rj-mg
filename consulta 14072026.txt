@@ -1,0 +1,941 @@
+[
+  {
+    "numeroProcesso": "10012391320268130474",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260625172501",
+    "orgaoJulgador": "Vara Única da Comarca de Paraopeba",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10055246220268130114",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260617181640",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Ibirité",
+    "assuntos": [
+      "Nota Promissória",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10122883420268130027",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260612155456",
+    "orgaoJulgador": "Vara Empresarial, da Faz. Púb. e Aut., Reg. Púb e Acidentes do Trab. da Comarca de Betim",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "11019069620268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260609184725",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Concurso de Credores",
+      "Classificação de créditos"
+    ]
+  },
+  {
+    "numeroProcesso": "11018670220268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260609180525",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "11017978220268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260609171257",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "11015240620268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260609144420",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Classificação de créditos",
+      "Concurso de Credores",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10170555220268130145",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260608104035",
+    "orgaoJulgador": "Vara de Sucessões, Empresarial e de Registros Públicos da Comarca de Juiz de Fora",
+    "assuntos": [
+      "Depósito Elisivo"
+    ]
+  },
+  {
+    "numeroProcesso": "10996031220268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260605133410",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10002016820268130343",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260601114045",
+    "orgaoJulgador": "Vara Única da Comarca de Itumirim",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Nota Promissória"
+    ]
+  },
+  {
+    "numeroProcesso": "10085721420268130313",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260529204039",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Ipatinga",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10000514320268130390",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260527170757",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e de Execuções Penais da Comarca de Machado",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10053931820268130525",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260526172632",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Pouso Alegre",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10924537720268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260526153936",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "10083572820268130672",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260526111922",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Sete Lagoas",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Depósito Elisivo"
+    ]
+  },
+  {
+    "numeroProcesso": "10914655620268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260525170144",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Classificação de créditos",
+      "Concurso de Credores",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10002038420268130069",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260525094326",
+    "orgaoJulgador": "Vara Única da Comarca de Bicas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10050213620268130245",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260522141658",
+    "orgaoJulgador": "2ª Vara Cível da Comarca de Santa Luzia",
+    "assuntos": [
+      "Títulos de Crédito"
+    ]
+  },
+  {
+    "numeroProcesso": "10074756020268130480",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260520090733",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Patos de Minas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50031285020268130694",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260520012626",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Três Pontas",
+    "assuntos": [
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "10101153720268130027",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260518121001",
+    "orgaoJulgador": "Vara Empresarial, da Faz. Púb. e Aut., Reg. Púb e Acidentes do Trab. da Comarca de Betim",
+    "assuntos": [
+      "Depósito Elisivo",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10849977620268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260515141030",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10001622020268130069",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260514132704",
+    "orgaoJulgador": "Vara Única da Comarca de Bicas",
+    "assuntos": [
+      "Autofalência",
+      "Citação"
+    ]
+  },
+  {
+    "numeroProcesso": "10016538720268130481",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260513173011",
+    "orgaoJulgador": "2ª Vara Cível da Comarca de Patrocínio",
+    "assuntos": [
+      "Classificação de créditos"
+    ]
+  },
+  {
+    "numeroProcesso": "10046605220268130525",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260510181839",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Pouso Alegre",
+    "assuntos": [
+      "Duplicata"
+    ]
+  },
+  {
+    "numeroProcesso": "10001594620268130528",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260508135443",
+    "orgaoJulgador": "Vara Única da Comarca de Prata",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Tutela de Urgência"
+    ]
+  },
+  {
+    "numeroProcesso": "10796454020268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260508012951",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Tutela de Urgência"
+    ]
+  },
+  {
+    "numeroProcesso": "50022773720268130071",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260507184415",
+    "orgaoJulgador": "1ª Vara Cível, Criminal e de Execuções Penais da Comarca de Boa Esperança",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10053578220268130231",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260506173505",
+    "orgaoJulgador": "V. da Faz.Púb., Empresarial, Reg.Púb e Acidentes do Trab. da Comarca de Ribeirão das Neves",
+    "assuntos": [
+      "Prestação de Serviços"
+    ]
+  },
+  {
+    "numeroProcesso": "10760815320268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260504121235",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Autofalência",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50049649520268130035",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260430175040",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Araguari",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "50021361820268130071",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260430160042",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Boa Esperança",
+    "assuntos": [
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "10047472920268130518",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260427204809",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Poços de Caldas",
+    "assuntos": [
+      "Classificação de créditos",
+      "Recuperação extrajudicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10677914920268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260422085221",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Tutela de Urgência"
+    ]
+  },
+  {
+    "numeroProcesso": "50004773520268130083",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260420143747",
+    "orgaoJulgador": "Vara Única da Comarca de Borda da Mata",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "50023447320268130694",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260416015815",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Três Pontas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10000682420268130182",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260415155258",
+    "orgaoJulgador": "Vara Única da Comarca de Conquista",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10181448820268130702",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260415133340",
+    "orgaoJulgador": "4ª Vara Cível da Comarca de Uberlândia",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10632593220268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260414203206",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Concurso de Credores",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50042313220268130035",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260414175435",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Araguari",
+    "assuntos": [
+      "Administração judicial",
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "10006747520268130045",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260413162952",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Caeté",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10013776720268130251",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260410114156",
+    "orgaoJulgador": "1ª Vara Cível, Criminal e de Execuções Penais da Comarca de Extrema",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50013955220268130596",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260410102348",
+    "orgaoJulgador": "1ª Vara Cível, Criminal e de Execuções Penais da Comarca de Santa Rita do Sapucaí",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10595707720268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260409141305",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Concurso de Credores",
+      "Recuperação judicial e Falência",
+      "Autofalência"
+    ]
+  },
+  {
+    "numeroProcesso": "50039541620268130035",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260408164348",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Araguari",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10066918420268130027",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260407170459",
+    "orgaoJulgador": "Vara Empresarial, da Faz. Púb. e Aut., Reg. Púb e Acidentes do Trab. da Comarca de Betim",
+    "assuntos": [
+      "Depósito Elisivo"
+    ]
+  },
+  {
+    "numeroProcesso": "10009355520268130040",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260407084759",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Araxá",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10066226720268130701",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260406140028",
+    "orgaoJulgador": "Vara Empresarial, de Execuções Fiscais e de Registros Públicos da Comarca de Uberaba",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10096263420268130145",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260404170222",
+    "orgaoJulgador": "Vara de Sucessões, Empresarial e de Registros Públicos da Comarca de Juiz de Fora",
+    "assuntos": [
+      "Adimplemento e Extinção"
+    ]
+  },
+  {
+    "numeroProcesso": "50037142720268130035",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260402151525",
+    "orgaoJulgador": "4ª Vara Cível da Comarca de Araguari",
+    "assuntos": [
+      "Administração judicial",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10037643020268130518",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260402142404",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Poços de Caldas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10065143820268130701",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260401194840",
+    "orgaoJulgador": "Vara Empresarial, de Execuções Fiscais e de Registros Públicos da Comarca de Uberaba",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10110597720268130079",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260401173334",
+    "orgaoJulgador": "2ª Vara Empresarial, de Fazenda Pública e Registros Públicos da Comarca de Contagem",
+    "assuntos": [
+      "Recuperação extrajudicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10037201120268130518",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260401145752",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Poços de Caldas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10043438720268130223",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260327170619",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Divinópolis",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50007010320268130267",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260326204529",
+    "orgaoJulgador": "Vara Única da Comarca de Francisco Sá",
+    "assuntos": [
+      "Autofalência"
+    ]
+  },
+  {
+    "numeroProcesso": "10508701520268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260326164937",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Classificação de créditos",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10491614220268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260325080831",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50014866820268130071",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260324150625",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Boa Esperança",
+    "assuntos": [
+      "Classificação de créditos"
+    ]
+  },
+  {
+    "numeroProcesso": "50009883720268130696",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260324143032",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Tupaciguara",
+    "assuntos": [
+      "Classificação de créditos",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10000888420268130450",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260319114701",
+    "orgaoJulgador": "Vara Única da Comarca de Nova Ponte",
+    "assuntos": [
+      "Liquidação"
+    ]
+  },
+  {
+    "numeroProcesso": "10445955020268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260318144807",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Antecipação de Tutela / Tutela Específica",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10394857020268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260310234608",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10387572920268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260310115354",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10025908320268130518",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260310111327",
+    "orgaoJulgador": "5ª Vara Cível da Comarca de Poços de Caldas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10366830220268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260306111038",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10358828620268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260305133558",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10071278120268130079",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260305113146",
+    "orgaoJulgador": "2ª Vara Empresarial, de Fazenda Pública e Registros Públicos da Comarca de Contagem",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10349101920268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260304114950",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Concurso de Credores",
+      "Honorários Advocatícios"
+    ]
+  },
+  {
+    "numeroProcesso": "10004678720268130106",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260303184057",
+    "orgaoJulgador": "1ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Cambuí",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10000073320268130193",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260302230515",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Coromandel",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10038088220268130701",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260302160253",
+    "orgaoJulgador": "Vara Empresarial, de Execuções Fiscais e de Registros Públicos da Comarca de Uberaba",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Liminar "
+    ]
+  },
+  {
+    "numeroProcesso": "10030621020268130672",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260226145314",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Sete Lagoas",
+    "assuntos": [
+      "Recuperação extrajudicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10299346620268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260225131814",
+    "orgaoJulgador": "2ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Inadimplemento"
+    ]
+  },
+  {
+    "numeroProcesso": "50005734820268130116",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260224171141",
+    "orgaoJulgador": "1ª Vara Cível, Criminal e de Execuções Penais da Comarca de Campos Gerais",
+    "assuntos": [
+      "Administração judicial",
+      "Classificação de créditos"
+    ]
+  },
+  {
+    "numeroProcesso": "50004722120268130242",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260224164704",
+    "orgaoJulgador": "Vara Única da Comarca de Espera Feliz",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10287957920268130024",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260224102847",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50002229620268130109",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260223142605",
+    "orgaoJulgador": "Vara Única da Comarca de Campanha",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10022721520268130223",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260220172310",
+    "orgaoJulgador": "3ª Vara Cível Comarca de Divinópolis",
+    "assuntos": [
+      "Inadimplemento"
+    ]
+  },
+  {
+    "numeroProcesso": "10026767720268130672",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260219205656",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de Sete Lagoas",
+    "assuntos": [
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "50005682520268130569",
+    "classe": "Recuperação Extrajudicial",
+    "dataAjuizamento": "20260219163911",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e de Execuções Penais da Comarca de Sacramento",
+    "assuntos": [
+      "Recuperação extrajudicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10002487020268130172",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260212200847",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e de Execuções Penais da Comarca de Conceição das Alagoas",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50004071620268130407",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260212131716",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e de Execuções Penais da Comarca de Mateus Leme",
+    "assuntos": [
+      "Administração judicial",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10011558920268130707",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260211171613",
+    "orgaoJulgador": "3ª Vara Cível da Comarca de Três Corações",
+    "assuntos": [
+      "Autofalência"
+    ]
+  },
+  {
+    "numeroProcesso": "10012527420268130518",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260205203450",
+    "orgaoJulgador": "4ª Vara Cível da Comarca de Poços de Caldas",
+    "assuntos": [
+      "Duplicata",
+      "Liquidação",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50007847320268130637",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260204193244",
+    "orgaoJulgador": "1ª Vara Cível da Comarca de São Lourenço",
+    "assuntos": [
+      "Autofalência"
+    ]
+  },
+  {
+    "numeroProcesso": "10001552620268130878",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260202181018",
+    "orgaoJulgador": "Vara Única da Comarca de Camanducaia",
+    "assuntos": [
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "10018055720268130701",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260131095333",
+    "orgaoJulgador": "Vara Empresarial, de Execuções Fiscais e de Registros Públicos da Comarca de Uberaba",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "10008829520268130518",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260129101129",
+    "orgaoJulgador": "5ª Vara Cível da Comarca de Poços de Caldas",
+    "assuntos": [
+      "Liquidação"
+    ]
+  },
+  {
+    "numeroProcesso": "50001605320268130498",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260129095643",
+    "orgaoJulgador": "Vara Única da Comarca de Perdizes",
+    "assuntos": [
+      "Recuperação judicial e Falência",
+      "Depósito Elisivo"
+    ]
+  },
+  {
+    "numeroProcesso": "50001697820268130671",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260127192818",
+    "orgaoJulgador": "Vara Única da Comarca de Serro",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "50002908520268130193",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260127123241",
+    "orgaoJulgador": "1ª Vara Cível, Criminal e de Execuções Penais da Comarca de Coromandel",
+    "assuntos": [
+      "Concurso de Credores",
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "50007265920268130382",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260123192258",
+    "orgaoJulgador": "2ª Vara Cível da Comarca de Lavras",
+    "assuntos": [
+      "Administração judicial"
+    ]
+  },
+  {
+    "numeroProcesso": "10112863820268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260123180526",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Autofalência",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50001080920268130126",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260123085943",
+    "orgaoJulgador": "Vara Única da Comarca de Capinópolis",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50006563620268130481",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260122110735",
+    "orgaoJulgador": "2ª Vara Cível da Comarca de Patrocínio",
+    "assuntos": [
+      "Concurso de Credores",
+      "Recuperação judicial e Falência"
+    ]
+  },
+  {
+    "numeroProcesso": "50000424720268130120",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260119080425",
+    "orgaoJulgador": "Vara Única da Comarca de Candeias",
+    "assuntos": [
+      "Concurso de Credores"
+    ]
+  },
+  {
+    "numeroProcesso": "10068001020268130024",
+    "classe": "Falência de Empresários, Sociedades Empresáriais, Microempresas e Empresas de Pequeno Porte",
+    "dataAjuizamento": "20260116161825",
+    "orgaoJulgador": "1ª Vara Empresarial da Comarca de Belo Horizonte",
+    "assuntos": [
+      "Cessão de Crédito",
+      "Recuperação judicial e Falência",
+      "Acessão",
+      "Duplicata"
+    ]
+  },
+  {
+    "numeroProcesso": "10009778020268130145",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260116145105",
+    "orgaoJulgador": "Vara de Sucessões, Empresarial e de Registros Públicos da Comarca de Juiz de Fora",
+    "assuntos": [
+      "Recuperação extrajudicial"
+    ]
+  },
+  {
+    "numeroProcesso": "50001119720268130696",
+    "classe": "Recuperação Judicial",
+    "dataAjuizamento": "20260112184810",
+    "orgaoJulgador": "2ª Vara Cível, Criminal e da Infância e da Juventude da Comarca de Tupaciguara",
+    "assuntos": [
+      "Recuperação judicial e Falência"
+    ]
+  }
+]
