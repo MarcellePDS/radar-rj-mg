@@ -110,13 +110,33 @@ function proximoDia(dataStr) {
   return d.toISOString().split('T')[0];
 }
 
+// A API do DataJud guarda dataAjuizamento como "AAAAMMDDHHmmss" (sem
+// separadores). Para filtrar por dia, convertemos os limites pra esse
+// mesmo formato — senão a busca não dá erro, mas também não acha nada.
+function paraCompacto(dataISO) {
+  return `${dataISO.replace(/-/g, '')}000000`;
+}
+
+// Converte "AAAAMMDDHHmmss" (formato bruto da API) pra "AAAA-MM-DDTHH:mm:ss"
+// (mais fácil de exibir e de o painel web interpretar).
+function compactoParaISO(bruto) {
+  if (!bruto || typeof bruto !== 'string' || bruto.length < 14) return bruto;
+  const ano = bruto.slice(0, 4);
+  const mes = bruto.slice(4, 6);
+  const dia = bruto.slice(6, 8);
+  const hora = bruto.slice(8, 10);
+  const min = bruto.slice(10, 12);
+  const seg = bruto.slice(12, 14);
+  return `${ano}-${mes}-${dia}T${hora}:${min}:${seg}`;
+}
+
 function aguardar(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function buscarProcessos({ data, comarca }, tentativa = 1) {
-  const inicioDoDia = data;
-  const inicioDoDiaSeguinte = proximoDia(data);
+  const inicioDoDia = paraCompacto(data);
+  const inicioDoDiaSeguinte = paraCompacto(proximoDia(data));
 
   const must = [
     { terms: { 'classe.codigo': CLASSES_DE_INTERESSE } },
@@ -216,7 +236,7 @@ async function consultarUmDia(data, comarca, vistos) {
       numeroProcesso: numero,
       classeId: p.classe && p.classe.codigo,
       classe: p.classe && p.classe.nome,
-      dataAjuizamento: p.dataAjuizamento,
+      dataAjuizamento: compactoParaISO(p.dataAjuizamento),
       orgaoJulgador: p.orgaoJulgador && p.orgaoJulgador.nome,
       assuntos: (p.assuntos || []).map((a) => a.nome),
       novo: !vistos.has(numero),
@@ -238,7 +258,61 @@ async function consultarUmDia(data, comarca, vistos) {
   return processos.length;
 }
 
+async function diagnosticar() {
+  console.log('\n=== MODO DIAGNÓSTICO ===\n');
+
+  // 1) Quantos processos existem no índice do TJMG só com as classes de
+  //    interesse, sem filtro de data — confirma se "classe.codigo" é o
+  //    campo certo e se essas classes realmente existem no índice.
+  console.log('1) Testando filtro por classe (sem data)...');
+  const resp1 = await fetch(ENDPOINT, {
+    method: 'POST',
+    headers: { Authorization: `APIKey ${API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      size: 1,
+      query: { terms: { 'classe.codigo': CLASSES_DE_INTERESSE } },
+    }),
+  });
+  const json1 = await resp1.json();
+  if (!resp1.ok) {
+    console.log(`   Erro HTTP ${resp1.status}:`, JSON.stringify(json1).slice(0, 500));
+  } else {
+    const total1 = json1.hits && json1.hits.total && json1.hits.total.value;
+    console.log(`   Total encontrado (todas as datas): ${total1}`);
+  }
+
+  // 2) Pega 1 processo qualquer (sem filtro nenhum) e mostra os campos
+  //    reais que a API devolve, pra comparar com os nomes usados no script.
+  console.log('\n2) Pegando 1 processo de exemplo (sem filtro nenhum)...');
+  const resp2 = await fetch(ENDPOINT, {
+    method: 'POST',
+    headers: { Authorization: `APIKey ${API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ size: 1, query: { match_all: {} } }),
+  });
+  const json2 = await resp2.json();
+  if (!resp2.ok) {
+    console.log(`   Erro HTTP ${resp2.status}:`, JSON.stringify(json2).slice(0, 500));
+  } else {
+    const hit = json2.hits && json2.hits.hits && json2.hits.hits[0];
+    if (hit) {
+      console.log('   Campos disponíveis no documento:', Object.keys(hit._source).join(', '));
+      console.log('   Exemplo de "classe":', JSON.stringify(hit._source.classe));
+      console.log('   Exemplo de "dataAjuizamento":', hit._source.dataAjuizamento);
+      console.log('   Exemplo de "orgaoJulgador":', JSON.stringify(hit._source.orgaoJulgador));
+    } else {
+      console.log('   Nenhum documento retornado.');
+    }
+  }
+
+  console.log('\n=== FIM DO DIAGNÓSTICO ===\n');
+}
+
 async function main() {
+  if (process.argv.includes('--debug')) {
+    await diagnosticar();
+    return;
+  }
+
   const opts = lerArgumentos();
   const dias = listaDeDias(opts);
   const vistos = carregarHistorico();
