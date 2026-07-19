@@ -281,13 +281,18 @@ async function diagnosticar() {
     console.log(`   Total encontrado (todas as datas): ${total1}`);
   }
 
-  // 2) Pega 1 processo qualquer (sem filtro nenhum) e mostra os campos
-  //    reais que a API devolve, pra comparar com os nomes usados no script.
-  console.log('\n2) Pegando 1 processo de exemplo (sem filtro nenhum)...');
+  // 2) Pega 1 processo das nossas classes de interesse e mostra os campos
+  //    reais, incluindo a lista de "movimentos" — é lá que deve estar o
+  //    movimento específico de Distribuição (código 26 na tabela do CNJ),
+  //    que é diferente da data de ajuizamento/publicação.
+  console.log('\n2) Pegando 1 processo de exemplo (dentro das classes de interesse)...');
   const resp2 = await fetch(ENDPOINT, {
     method: 'POST',
     headers: { Authorization: `APIKey ${API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ size: 1, query: { match_all: {} } }),
+    body: JSON.stringify({
+      size: 1,
+      query: { terms: { 'classe.codigo': CLASSES_DE_INTERESSE } },
+    }),
   });
   const json2 = await resp2.json();
   if (!resp2.ok) {
@@ -295,10 +300,27 @@ async function diagnosticar() {
   } else {
     const hit = json2.hits && json2.hits.hits && json2.hits.hits[0];
     if (hit) {
-      console.log('   Campos disponíveis no documento:', Object.keys(hit._source).join(', '));
-      console.log('   Exemplo de "classe":', JSON.stringify(hit._source.classe));
-      console.log('   Exemplo de "dataAjuizamento":', hit._source.dataAjuizamento);
-      console.log('   Exemplo de "orgaoJulgador":', JSON.stringify(hit._source.orgaoJulgador));
+      const src = hit._source;
+      console.log('   Campos disponíveis no documento:', Object.keys(src).join(', '));
+      console.log('   Exemplo de "classe":', JSON.stringify(src.classe));
+      console.log('   Exemplo de "dataAjuizamento":', src.dataAjuizamento);
+      console.log('   Exemplo de "orgaoJulgador":', JSON.stringify(src.orgaoJulgador));
+
+      if (Array.isArray(src.movimentos)) {
+        console.log(`\n   Documento tem ${src.movimentos.length} movimento(s). Lista completa:`);
+        console.log(JSON.stringify(src.movimentos, null, 2));
+
+        const distribuicao = src.movimentos.find(
+          (m) => m.nome && m.nome.toLowerCase().includes('distribui')
+        );
+        if (distribuicao) {
+          console.log('\n   >>> Movimento de Distribuição encontrado:', JSON.stringify(distribuicao));
+        } else {
+          console.log('\n   >>> Nenhum movimento com "distribuição" no nome foi encontrado nesse exemplo.');
+        }
+      } else {
+        console.log('   (Esse documento não tem um campo "movimentos" — ver campos disponíveis acima.)');
+      }
     } else {
       console.log('   Nenhum documento retornado.');
     }
@@ -307,7 +329,42 @@ async function diagnosticar() {
   console.log('\n=== FIM DO DIAGNÓSTICO ===\n');
 }
 
+async function buscarPorNumero(numero) {
+  console.log(`\n=== BUSCANDO PROCESSO ${numero} ===\n`);
+  const numeroLimpo = numero.replace(/\D/g, '');
+
+  const resp = await fetch(ENDPOINT, {
+    method: 'POST',
+    headers: { Authorization: `APIKey ${API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      size: 1,
+      query: { term: { numeroProcesso: numeroLimpo } },
+    }),
+  });
+  const json = await resp.json();
+
+  if (!resp.ok) {
+    console.log(`Erro HTTP ${resp.status}:`, JSON.stringify(json).slice(0, 800));
+    return;
+  }
+
+  const hit = json.hits && json.hits.hits && json.hits.hits[0];
+  if (!hit) {
+    console.log('Processo não encontrado nesse índice (pode levar um tempo entre a distribuição real e a indexação no DataJud).');
+    return;
+  }
+
+  console.log('Documento completo retornado pela API:\n');
+  console.log(JSON.stringify(hit._source, null, 2));
+}
+
 async function main() {
+  const idxProcesso = process.argv.indexOf('--processo');
+  if (idxProcesso !== -1) {
+    await buscarPorNumero(process.argv[idxProcesso + 1]);
+    return;
+  }
+
   if (process.argv.includes('--debug')) {
     await diagnosticar();
     return;
