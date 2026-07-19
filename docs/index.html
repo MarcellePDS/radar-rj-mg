@@ -220,8 +220,11 @@ async function carregarIndice() {
   }
 }
 
-function formatarDataCurta(iso) {
-  const d = new Date(`${iso}T12:00:00`);
+function formatarDataCurta(valor) {
+  // Aceita tanto "AAAA-MM-DD" (datas do seletor/índice) quanto
+  // "AAAA-MM-DDTHH:mm:ss" (data de ajuizamento de cada processo).
+  const dataSimples = valor.slice(0, 10);
+  const d = new Date(`${dataSimples}T12:00:00`);
   return d.toLocaleDateString('pt-BR');
 }
 
